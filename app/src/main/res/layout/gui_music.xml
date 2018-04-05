@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@drawable/rl_bg_logo_white">
+    
+    <RelativeLayout 
+        android:id="@+id/RL_top"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+    	android:layout_alignParentTop="true"
+    	android:layout_centerHorizontal="true"
+    	android:background="@drawable/rl_top_bar_big"
+        >
+    		
+    	<ImageView 
+    	    android:id="@+id/IV_icon"
+        	android:layout_width="20dp"
+        	android:layout_height="20dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginLeft="10dp"
+        	android:layout_alignParentTop="true"
+        	android:layout_marginTop="6dp"
+        	android:src="@drawable/iv_logo"
+        	android:scaleType="fitXY"
+        	/>
+    
+	    
+	    <TextView 
+	    	android:id="@+id/TV_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/IV_icon"
+        	android:layout_marginLeft="5dp"
+        	android:layout_alignParentTop="true"
+        	android:layout_marginTop="8dp"
+	        android:text="SCORE"
+	        android:textSize="12sp"
+	    	android:textColor="@color/white"
+	        />
+    	
+        <EditText
+    	    android:id="@+id/ET_find_music"
+    	 	android:layout_width="fill_parent"
+    	 	android:layout_height="wrap_content"
+    		android:layout_alignParentBottom="true"
+    		android:layout_centerHorizontal="true"
+    		android:layout_marginLeft="10dp"
+    		android:layout_marginRight="10dp"
+    	 	android:maxLength="20"
+    	 	android:textSize="20sp"
+    	 	android:lines="1"
+    	 	android:singleLine="true"
+    	 	android:imeOptions="actionSearch"
+    	 	/>
+    
+	    
+	    <TextView 
+	    	android:id="@+id/TV_my_s_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="8dp"
+	        android:text="asdfasdfasdf"
+	        android:textSize="12sp"
+	    	android:textColor="@color/white"
+	        />
+        
+    </RelativeLayout>
+    
+    	    
+    <ListView
+       	android:id="@+id/LV_music"
+       	android:layout_height="fill_parent"
+       	android:layout_width="wrap_content"
+       	android:layout_below="@+id/RL_top"
+       	android:layout_above="@+id/B_box"
+       	android:layout_marginRight="10dp"
+       	android:layout_marginLeft="10dp"
+    	android:background="@android:color/transparent"
+    	android:cacheColorHint="#FFFAF0"
+    	android:listSelector="@android:color/transparent"
+       	android:divider="@android:color/transparent"
+     	android:visibility="invisible"
+     	/> 
+    
+    <RelativeLayout 
+        android:id="@+id/RL_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+    	android:layout_alignParentBottom="true"
+    	android:background="@drawable/rl_bottom_bar"
+        >
+	        <ImageButton
+    	        android:id="@+id/IB_letter"
+    			android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_toLeftOf="@+id/IB_bag"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/b_letter"
+       			android:background="@android:color/transparent"
+    	 		/>
+        	
+	        <ImageButton
+    	        android:id="@+id/IB_bag"
+    			android:layout_width="50dp"
+        		android:layout_height="50dp"
+        		android:layout_alignParentRight="true"
+        		android:layout_marginRight="15dp"
+        		android:layout_centerVertical="true"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/b_bag"
+       			android:background="@android:color/transparent"
+    	 		/>
+    
+        	
+        	
+	        <ImageView
+    	        android:id="@+id/IV_partition_bar"
+    			android:layout_width="30dp"
+        		android:layout_height="50dp"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:layout_toLeftOf="@+id/IB_letter"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/iv_partition_bar"
+       			android:background="@android:color/transparent"
+    	 		/>
+    
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

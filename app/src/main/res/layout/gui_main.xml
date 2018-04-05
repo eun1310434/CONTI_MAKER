@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+     
+     <ImageView
+        android:id="@+id/IV_main_ti"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@color/white"
+        android:scaleType="fitXY"
+        android:background="@android:color/white"
+        />
+     
+     <RelativeLayout 
+         android:id="@+id/RL_menu"
+        android:layout_width="130dp"
+        android:layout_height="fill_parent"
+       	android:layout_alignParentRight="true"
+        android:background="@drawable/rl_bg_black"
+         >
+         
+		    <ImageButton
+		        android:id="@+id/IB_profile"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		       	android:layout_alignParentTop="true"
+		       	android:layout_marginTop="20dp"
+		       	android:layout_centerHorizontal="true"
+		        android:src="@drawable/b_profile_gray"
+		        android:scaleType="fitXY"
+		        android:background="@android:color/transparent"
+		        />
+         
+		    <TextView
+		        android:id="@+id/TV_profile"
+		        android:layout_width="100dp"
+		        android:layout_height="20dp"
+		        android:layout_below="@+id/IB_profile"
+		       	android:layout_centerHorizontal="true"
+		        android:background="@drawable/b_click_gray_dimgray"
+		        android:text="zep12345132"
+		        android:textSize="15dp"
+		        android:gravity="center"
+		        android:textColor="@color/white"
+		        />
+         
+		    <ImageButton
+		        android:id="@+id/IB_score_search"
+		        android:layout_width="130dp"
+		        android:layout_height="40dp"
+		       	android:layout_alignParentRight="true"
+		        android:layout_above="@+id/IB_conti"
+		       	android:layout_marginBottom="2dp"
+		        android:src="@drawable/b_score"
+		        android:scaleType="fitXY"
+		        android:background="@drawable/b_click_gray_dimgray"
+		        />
+		        
+		    <ImageButton 
+		        android:id="@+id/IB_conti"
+		        android:layout_width="130dp"
+		        android:layout_height="40dp"
+		       	android:layout_alignParentRight="true"
+		        android:layout_above="@+id/IB_remoteview"
+		       	android:layout_marginBottom="2dp"
+		        android:src="@drawable/b_continuity"
+		        android:scaleType="fitXY"
+		        android:background="@drawable/b_click_gray_dimgray"
+		        />
+		        
+		    <ImageButton 
+		        android:id="@+id/IB_remoteview"
+		        android:layout_width="130dp"
+		        android:layout_height="40dp"
+		       	android:layout_alignParentRight="true"
+		        android:layout_above="@+id/IB_friends"
+		       	android:layout_marginBottom="2dp"
+		        android:src="@drawable/b_remoteview"
+		        android:scaleType="fitXY"
+		        android:background="@drawable/b_click_gray_dimgray"
+		        />
+		    
+		    <ImageButton 
+		        android:id="@+id/IB_friends"
+		        android:layout_width="130dp"
+		        android:layout_height="40dp"
+		       	android:layout_alignParentRight="true"
+		        android:layout_above="@+id/IB_setting"
+		       	android:layout_marginBottom="2dp"
+		        android:src="@drawable/b_friends"
+		        android:scaleType="fitXY"
+		        android:background="@drawable/b_click_gray_dimgray"
+		        />
+		    
+		    <ImageButton 
+		        android:id="@+id/IB_setting"
+		        android:layout_width="130dp"
+		        android:layout_height="40dp"
+		       	android:layout_alignParentRight="true"
+		        android:layout_above="@+id/IB_quit"
+		       	android:layout_marginBottom="2dp"
+		        android:src="@drawable/b_setting"
+		        android:scaleType="fitXY"
+		        android:background="@drawable/b_click_gray_dimgray"
+		        />
+		    
+		    <ImageButton 
+		        android:id="@+id/IB_quit"
+		        android:layout_width="130dp"
+		        android:layout_height="40dp"
+		       	android:layout_alignParentBottom="true"
+		       	android:layout_alignParentRight="true"
+		       	android:layout_marginBottom="15dp"
+		        android:src="@drawable/b_quit"
+		        android:scaleType="fitXY"
+		        android:background="@drawable/b_click_gray_dimgray"
+		        />
+         
+     </RelativeLayout>
+    
+     <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="130dp"
+        android:src="@drawable/iv_logo_b"
+        android:scaleType="fitEnd"
+        />
+     
+    
+    <TextView 
+        android:id="@+id/MQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="MQ"
+        android:textColor="@color/dimgray"
+        android:textSize="15dp"
+        />
+    
+    <TextView 
+        android:id="@+id/TV_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"	
+        android:text="Lite 51"
+        android:textColor="@color/gray"
+        android:textSize="10dp"
+        />
+
+</RelativeLayout>

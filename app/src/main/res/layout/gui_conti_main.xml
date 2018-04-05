@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bback"
+    android:orientation="vertical" >
+    
+        <RelativeLayout 
+        	android:id="@+id/bar"
+        	android:layout_width="fill_parent"
+        	android:layout_height="30dp"
+    		android:layout_alignParentTop="true"
+    		android:layout_centerHorizontal="true"
+    		android:background="@drawable/rl_top_bar"
+        	>
+	    <ImageView 
+    	    android:id="@+id/icon"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="10dp"
+        	android:layout_centerVertical="true"
+	        android:src="@drawable/iv_logo"
+	        android:scaleType="fitXY"
+	        />
+    
+	    
+	    <TextView 
+	    	android:id="@+id/TV_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/icon"
+        	android:layout_marginLeft="5dp"
+        	android:layout_centerVertical="true"
+	        android:text="CONTINUITY MAIN"
+	        android:textSize="12sp"
+	    	android:textColor="@color/white"
+	        />
+    		
+    		
+		<TextView 
+		    android:id="@+id/TV_my_s_id"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+        	android:layout_centerVertical="true"
+		    android:text="asdfasdfasdf"
+		    android:textSize="12sp"
+		    android:textColor="@color/white"
+		    />
+        
+        </RelativeLayout>
+        
+    
+        <RelativeLayout 
+        	android:id="@+id/cinfo_group"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:layout_marginLeft="10dp"
+    		android:layout_below="@+id/bar"
+		    android:layout_above="@+id/B_box"
+    		android:layout_centerHorizontal="true"
+    		android:background="@color/white"
+        	>
+    		
+    		<TextView 
+        		android:id="@+id/TV_c_name_title"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:layout_marginTop="5dp"
+        		android:layout_marginLeft="10dp"
+        		android:text="제목"
+        		android:textSize="15sp"
+    			android:textColor="#6B8E23"
+        		/>
+    
+     		<TextView
+    			android:id="@+id/TV_c_name"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_below="@+id/TV_c_name_title"
+    			android:layout_marginLeft="20dp"
+    			android:layout_marginRight="10dp"
+    			android:textSize="20sp"
+        		android:text="겨울수련회asdasdasdadad"
+    			android:textColor="@color/dimgray"
+    			android:gravity="left"
+    			android:lines="1"
+    			/>
+    
+    		<TextView 
+        		android:id="@+id/TV_c_writer_title"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+    			android:layout_below="@+id/TV_c_name"
+    			android:layout_alignParentLeft="true"
+        		android:layout_marginTop="5dp"
+    			android:layout_marginLeft="10dp"
+        		android:text="작성자"
+        		android:textSize="15sp"
+    			android:textColor="#6B8E23"
+        		/>
+    
+     		<TextView
+    			android:id="@+id/TV_c_writer"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginLeft="20dp"
+    			android:layout_below="@+id/TV_c_writer_title"
+    			android:textSize="20sp"
+        		android:text="신매인"
+    			android:textColor="@color/dimgray"
+    			android:gravity="left"
+    			android:lines="1"
+    			/>
+    
+    		<TextView 
+        		android:id="@+id/TV_c_subject_title"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+    			android:layout_below="@+id/TV_c_writer"
+        		android:layout_alignParentLeft="true"
+        		android:layout_marginTop="5dp"
+        		android:layout_marginLeft="10dp"
+        		android:text="주제"
+        		android:textSize="15sp"
+    			android:textColor="#6B8E23"
+        		/>
+    		
+    		<TextView
+    			android:id="@+id/TV_c_subject"
+    			android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_below="@+id/TV_c_subject_title"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginLeft="20dp"
+    			android:textSize="15sp"
+        		android:text="하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니 이는 저를 믿는자마다 멸망치 아니하다."
+    			android:textColor="@color/dimgray"
+    			android:gravity="left"
+    			android:lines="4"
+    			/>
+	    	<TextView 
+	        	android:id="@+id/TV_c_score"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	    		android:layout_below="@+id/TV_c_subject"
+	        	android:layout_marginTop="5dp"
+	        	android:layout_alignParentLeft="true"
+	        	android:layout_marginLeft="10dp"
+	        	android:text="악보목록"
+	        	android:textSize="15sp"
+	    		android:textColor="#6B8E23"
+	        	/>
+	    
+		    <TextView 
+		        android:id="@+id/TV_c_score_check"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="13곡"
+		        android:textSize="10sp"
+		        android:layout_toRightOf="@+id/TV_c_score"
+		        android:layout_marginLeft="10dp"
+		        android:layout_alignBottom="@+id/TV_c_score"
+		        />
+		    
+		    <ListView
+		       	android:id="@+id/my_music_list"
+		       	android:layout_height="fill_parent"
+		       	android:layout_width="fill_parent"
+		    	android:layout_marginRight="10dp"
+		    	android:layout_marginLeft="10dp"
+		       	android:layout_below="@+id/TV_c_score"
+		       	android:background="@android:color/transparent" 
+		       	android:divider="@color/lightgray"
+		     	android:dividerHeight="0.0001sp"
+		       	android:cacheColorHint="@color/whitesmoke"
+		     	/> 
+        
+        </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/B_box"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+    	android:layout_alignParentBottom="true"
+    	android:background="@drawable/rl_bottom_bar"
+        >
+        	
+	        <ImageButton
+    	        android:id="@+id/sharing_conti"
+    			android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_marginRight="15dp"
+        		android:layout_alignParentRight="true"
+        		android:layout_centerVertical="true"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/b_share"
+       			android:background="@android:color/transparent"
+    	 		/>
+        	
+        	
+	        <ImageButton
+    	        android:id="@+id/share_conti"
+    			android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:layout_toLeftOf="@+id/sharing_conti"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/b_send"
+       			android:background="@android:color/transparent"
+    	 		/>
+        	
+        	
+	        <ImageButton
+    	        android:id="@+id/edit_conti"
+    			android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:layout_toLeftOf="@+id/share_conti"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/b_edit"
+       			android:background="@android:color/transparent"
+    	 		/>
+        	
+        	
+	        <ImageView
+    	        android:id="@+id/partition_bar"
+    			android:layout_width="30dp"
+        		android:layout_height="50dp"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:layout_toLeftOf="@+id/edit_conti"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/iv_partition_bar"
+       			android:background="@android:color/transparent"
+    	 		/>
+        
+    
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.MQ.music.conti_maker_demo"
+    android:versionCode="56"
+    android:versionName="1.0" >
+
+    
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+    
+    <!-- GCM Service -->
+	<permission android:name="com.MQ.music.conti_maker_demo.permission.C2D_MESSAGE" android:protectionLevel="signature"></permission>
+	<uses-permission android:name="com.MQ.music.conti_maker_demo.permission.C2D_MESSAGE"/>
+	<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+	<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> 
+    
+	
+	
+    	
+    <application
+        android:icon="@drawable/iv_logo"
+        android:label="@string/app_name" 
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name=".GUI_start"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".GUI_main"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
+        </activity>
+
+        
+        <activity
+            android:name=".GUI_music"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="adjustPan" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".GUI_music_view_portrait"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" 
+            >
+        </activity>
+        
+        <activity
+            android:name=".GUI_music_view_landscape"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape" 
+            >
+        </activity>
+        
+        <activity
+            android:name=".GUI_music_view_share"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" 
+            >
+        </activity>
+        
+        <activity
+            android:name=".GUI_music_view_share_control"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape" 
+            >
+        </activity>
+        
+        <activity
+            android:name=".GUI_conti"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".GUI_conti_main"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" >
+             
+        </activity>
+
+        
+        <activity
+            android:name=".GUI_conti_print"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" >
+             
+        </activity>
+        
+        <activity
+            android:name=".GUI_conti_make"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity
+            android:name=".GUI_conti_make_name"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity
+            android:name=".GUI_conti_delete"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".GUI_conti_share"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".GUI_conti_view_share"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".GUI_conti_view_share_control"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape" 
+            >
+        </activity>
+        
+        <activity
+            android:name=".GUI_remote_view"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape" >
+        </activity>
+        
+        <activity
+            android:name=".GUI_remote_view_landscape"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape" >
+        </activity>
+        
+        <activity
+            android:name=".GUI_remote_view_portrait"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity
+            android:name=".GUI_friend"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity
+            android:name="GUI_friend_down"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity
+            android:name=".GUI_friend_delete"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_setting"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_setting_version"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_setting_user"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_setting_mq"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_setting_request"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_setting_help_1"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_setting_help_2"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_setting_help_3"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_down_portrait"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <activity
+            android:name=".GUI_down_landscape"
+            android:label="@string/app_name" 
+            android:configChanges="orientation|keyboard"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape">
+        </activity>
+        
+        
+        <!-- GCM -->
+		<receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" 
+		    android:permission="com.google.android.c2dm.permission.SEND">
+		    <intent-filter>
+		        <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+		        <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+		        <category android:name="com.MQ.music.conti_maker_demo"/>
+		    </intent-filter>
+		</receiver>
+		<service android:name=".GCMIntentService"></service>
+        
+        
+    </application>
+
+</manifest>

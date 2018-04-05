@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"  
+    android:background="@drawable/item_selector">
+    
+    <TextView 
+        android:id="@+id/m_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+    	android:textSize="15sp"
+        android:text="1)"
+    	android:textColor="@android:color/black"
+        />
+    
+    <TextView 
+        android:id="@+id/m_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/m_num"
+        android:layout_marginLeft="10dip"
+        android:layout_centerVertical="true"
+    	android:textSize="15sp"
+        android:text="아버지 사랑 내가 노래해."
+    	android:textColor="@android:color/black"
+        />
+    
+    <TextView 
+        android:id="@+id/m_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/go"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+    	android:textSize="15sp"
+        android:text="G"
+    	android:textColor="@android:color/black"
+        />
+    
+    
+    <ImageView
+        android:id="@+id/go"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/go_b"
+        />
+    
+
+</RelativeLayout>

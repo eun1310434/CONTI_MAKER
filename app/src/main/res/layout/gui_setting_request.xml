@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+    
+    
+        
+        <RelativeLayout 
+        	android:id="@+id/bar"
+        	android:layout_width="fill_parent"
+        	android:layout_height="30dp"
+    		android:layout_alignParentTop="true"
+    		android:layout_centerHorizontal="true"
+    		android:background="@drawable/rl_top_bar"
+        	>
+        	
+	    <ImageView 
+    	    android:id="@+id/icon"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="10dp"
+        	android:layout_centerVertical="true"
+	        android:src="@drawable/iv_logo"
+	        android:scaleType="fitXY"
+	        />
+    
+	    
+	    <TextView 
+	    	android:id="@+id/TV_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/icon"
+        	android:layout_marginLeft="5dp"
+        	android:layout_centerVertical="true"
+	        android:text="REQUEST"
+	        android:textSize="12sp"
+	    	android:textColor="@color/white"
+	        />
+    		
+    		
+		<TextView 
+		    android:id="@+id/TV_my_s_id"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+        	android:layout_centerVertical="true"
+		    android:text="asdfasdfasdf"
+		    android:textSize="12sp"
+		    android:textColor="@color/white"
+		    />
+        
+        </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/TV_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+    	android:textSize="20sp"
+    	android:textColor="#6B8E23"
+    	android:text="E-mail"
+        />
+    
+    <TextView 
+        android:id="@+id/TV_info_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TV_email"
+        android:layout_toRightOf="@+id/TV_email"
+        android:layout_marginLeft="5dp"
+    	android:textSize="10sp"
+    	android:textColor="@color/gray"
+    	android:text="악보가 업데이트 되면 연락 드리겠습니다."
+        />
+    
+     <EditText
+    	android:id="@+id/ET_email"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+        android:layout_below="@+id/TV_email"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentLeft="true"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+    	android:maxLength="30"
+    	android:textSize="20sp"
+    	android:lines="1"
+    	android:singleLine="true"
+    	android:imeOptions="actionSearch"
+    	/>
+     
+     
+     
+     
+    
+    <TextView 
+        android:id="@+id/TV_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ET_email"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+    	android:textSize="20sp"
+    	android:textColor="#6B8E23"
+    	android:text="신청 악보"
+        />
+    
+    <TextView 
+        android:id="@+id/TV_minfo_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TV_request"
+        android:layout_toRightOf="@+id/TV_request"
+        android:layout_marginLeft="5dp"
+    	android:textSize="10sp"
+    	android:textColor="@color/gray"
+    	android:text="제목 , 첫 가사  등..곡의 정보를 상세히 적어 주세요."
+        />
+    
+     <EditText
+    	android:id="@+id/ET_request"
+    	android:layout_width="fill_parent"
+    	android:layout_height="150dp"
+        android:layout_below="@+id/TV_request"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentLeft="true"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+    	android:maxLength="100"
+     	android:gravity="left|top"
+    	android:textSize="20sp"
+    	android:singleLine="false"
+    	android:imeOptions="actionSend"
+    	/>
+     
+     
+     
+     
+    
+    <TextView 
+        android:id="@+id/TV_fight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ET_request"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+    	android:textSize="20sp"
+    	android:textColor="#6B8E23"
+    	android:text="요구 사항"
+        />
+    
+    <TextView 
+        android:id="@+id/TV_fight_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/TV_fight"
+        android:layout_toRightOf="@+id/TV_fight"
+        android:layout_marginLeft="5dp"
+    	android:textSize="10sp"
+    	android:textColor="@color/gray"
+    	android:text="요구 사항 또는 응원 글을 부탁합니당~"
+        />
+    
+     <EditText
+    	android:id="@+id/ET_fight"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        android:layout_below="@+id/TV_fight"
+        android:layout_above="@+id/B_send"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentLeft="true"
+    	android:layout_marginLeft="10dp"
+    	android:layout_marginRight="10dp"
+    	android:maxLength="100"
+     	android:gravity="left|top"
+    	android:textSize="20sp"
+    	android:singleLine="false"
+    	android:imeOptions="actionSend"
+    	/>
+    
+    <Button 
+        android:id="@+id/B_send"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentRight="true"
+    	android:layout_marginRight="10dp"
+       	android:textSize="15sp"
+        android:text="신청하기"
+        />
+    
+    
+    
+
+</RelativeLayout>

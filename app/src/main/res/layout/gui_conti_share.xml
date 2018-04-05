@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:background="@drawable/bback">
+    
+    
+        <RelativeLayout 
+        	android:id="@+id/bar"
+        	android:layout_width="fill_parent"
+        	android:layout_height="30dp"
+    		android:layout_alignParentTop="true"
+    		android:layout_centerHorizontal="true"
+    		android:background="@drawable/rl_top_bar"
+        	>
+        	
+	    <ImageView 
+    	    android:id="@+id/icon"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="10dp"
+        	android:layout_centerVertical="true"
+	        android:src="@drawable/iv_logo"
+	        android:scaleType="fitXY"
+	        />
+    
+	    
+	    <TextView 
+	    	android:id="@+id/TV_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/icon"
+        	android:layout_marginLeft="5dp"
+        	android:layout_centerVertical="true"
+	        android:text="CONTINUITY SHARE"
+	        android:textSize="12sp"
+	    	android:textColor="@color/white"
+	        />
+    		
+    		
+		<TextView 
+		    android:id="@+id/TV_my_s_id"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+        	android:layout_centerVertical="true"
+		    android:text="asdfasdfasdf"
+		    android:textSize="12sp"
+		    android:textColor="@color/white"
+		    />
+        
+        </RelativeLayout>
+    
+    	    
+    	<ListView
+       		android:id="@+id/list"
+       		android:layout_height="fill_parent"
+       		android:layout_width="fill_parent"
+    		android:layout_marginRight="10dp"
+    		android:layout_marginLeft="10dp"
+    		android:layout_marginTop="10dp"
+       		android:layout_below="@+id/bar"
+       		android:layout_above="@+id/B_box"
+    		android:background="@android:color/transparent"
+    		android:cacheColorHint="@android:color/transparent"
+    		android:listSelector="@android:color/transparent"
+       		android:divider="@color/lightgray"
+     		android:dividerHeight="0.00001dp"
+     		android:longClickable="true"
+     		/> 	
+     		
+    	<RelativeLayout 
+        	android:id="@+id/B_box"
+        	android:layout_width="fill_parent"
+        	android:layout_height="50dp"
+    		android:layout_alignParentBottom="true"
+    		android:background="@drawable/rl_bottom_bar"
+    		android:visibility="visible"
+        	>
+		
+    	    
+    		<RelativeLayout 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_centerInParent="true"
+        		>
+        		
+        		<Button
+    	        	android:id="@+id/B_send"
+    				android:layout_width="100dp"
+        			android:layout_height="40dp"
+        			android:scaleType="fitXY"
+       				android:layout_centerVertical="true"
+       				android:text="콘티전송"
+       				android:textColor="@color/white"
+       				android:textSize="15dp"
+       				android:background="@drawable/b_click_gray_dimgray"
+    	 			/>
+	        
+	        	<Button
+    	        	android:id="@+id/B_cancle"
+    				android:layout_width="100dp"
+        			android:layout_height="40dp"
+        			android:scaleType="fitXY"
+       				android:layout_toRightOf="@+id/B_send"
+       				android:layout_marginLeft="10dp"
+       				android:layout_centerVertical="true"
+       				android:text="취 소"
+       				android:textColor="@color/white"
+       				android:textSize="15dp"
+       				android:background="@drawable/b_click_gray_dimgray"
+    	 			/>
+        		</RelativeLayout>
+    	</RelativeLayout>
+     		
+    	
+
+</RelativeLayout>

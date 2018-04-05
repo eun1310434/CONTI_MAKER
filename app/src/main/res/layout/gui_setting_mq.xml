@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+    
+    
+     <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/main_1"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        />
+     
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="20dp" 
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp" 
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/help_back"
+    >
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+    	android:textSize="40sp"
+        android:text="MQ"
+    	android:textColor="@color/whitesmoke"
+        />
+
+    
+    <TextView 
+        android:id="@+id/contents_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="30dp"
+    	android:textSize="15sp"
+        android:text="- 'MQ'는 Make Question의 약자입니다."
+    	android:textColor="@color/whitesmoke"
+        />
+    
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="10dp"
+    android:layout_centerHorizontal="true"
+    >
+    	
+    <Button 
+        android:id="@+id/B_dial"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+       	android:textSize="15sp"
+       	android:text="문의 전화"
+        />
+    	
+    <Button 
+        android:id="@+id/B_send"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+       	android:textSize="15sp"
+       	android:text="홈페이지"
+       	android:layout_toRightOf="@+id/B_dial"
+        />
+
+	</RelativeLayout>
+
+	</RelativeLayout>
+
+</RelativeLayout>

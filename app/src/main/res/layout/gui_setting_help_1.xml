@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_1"
+    android:orientation="vertical" >
+    
+        <RelativeLayout 
+        	android:id="@+id/RL_top"
+        	android:layout_width="fill_parent"
+        	android:layout_height="30dp"
+    		android:layout_alignParentTop="true"
+    		android:layout_centerHorizontal="true"
+    		android:background="@drawable/rl_top_bar"
+        	>
+    		
+	    	<ImageView 
+	    	    android:id="@+id/IV_icon"
+	        	android:layout_width="20dp"
+	        	android:layout_height="20dp"
+	        	android:layout_alignParentLeft="true"
+	        	android:layout_marginLeft="10dp"
+	        	android:layout_centerVertical="true"
+	        	android:src="@drawable/iv_logo"
+	        	android:scaleType="fitXY"
+	        	/>
+	    
+		    
+		    <TextView 
+		    	android:id="@+id/TV_title"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_toRightOf="@+id/IV_icon"
+	        	android:layout_marginLeft="5dp"
+	        	android:layout_centerVertical="true"
+		        android:text="UPDATE"
+		        android:textSize="12sp"
+		    	android:textColor="@color/white"
+		        />
+    		
+    		<TextView 
+		    	android:id="@+id/TV_message"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="감사합니다."
+        		android:textSize="12sp"
+        		android:layout_centerInParent="true"
+    			android:textColor="@color/whitesmoke"
+        		/>
+        
+        </RelativeLayout>
+		    
+		    
+	<RelativeLayout 
+		android:id="@+id/RL_center"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_below="@+id/RL_top"
+		android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+		 >
+    		
+    		<TextView 
+    		    android:id="@+id/TV_info_title"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="설정이 준비 되었습니다."
+        		android:textSize="15sp"
+    			android:textColor="@color/white"
+        		android:layout_centerHorizontal="true"
+        		/>
+    		
+    		<TextView 
+    		    android:id="@+id/TV_info_content"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="당신의 콘티메이커 사용을 위한 준비를 시작하세요."
+        		android:textSize="13sp"
+        		android:layout_below="@+id/TV_info_title"
+    			android:textColor="@color/lightgray"
+        		android:layout_centerHorizontal="true"
+        		/>
+    		
+    		<TextView 
+    		    android:id="@+id/TV_s_version"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="10dp"
+        		android:text="Gen 1.0"
+        		android:textSize="20sp"
+        		android:layout_below="@+id/TV_info_content"
+    			android:textColor="@color/lightgray"
+        		android:layout_centerHorizontal="true"
+        		/>
+    
+			<ImageView 
+    		    android:id="@+id/IV_logo_a"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+        		android:layout_below="@+id/TV_info_content"
+				android:layout_marginTop="50dp"
+				android:layout_marginLeft="50dp"
+				android:layout_marginRight="50dp"
+				android:src="@drawable/iv_logo_a"
+				android:scaleType="fitStart"
+				/>
+	    
+	</RelativeLayout>
+    
+		    
+	<RelativeLayout 
+		android:id="@+id/RL_bottom"
+		android:layout_height="200dp"
+		android:layout_width="fill_parent"
+		android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+		 >
+    		
+    	<TextView 
+    		android:id="@+id/TV_code"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+    	 	android:layout_above="@+id/ET_code"
+        	android:text="사용자 코드번호를 입력해 주세요.."
+        	android:textSize="13sp"
+        	android:layout_below="@+id/TV_info_content"
+    		android:textColor="@color/lightgray"
+        	android:layout_centerHorizontal="true"
+        	android:visibility="invisible"
+        />
+    	
+        <EditText
+    	    android:id="@+id/ET_code"
+    	 	android:layout_width="fill_parent"
+    	 	android:layout_height="wrap_content"
+    	 	android:layout_above="@+id/B_next"
+    	 	android:layout_marginBottom="10dp"
+    		android:layout_marginLeft="50dp"
+    		android:layout_marginRight="50dp"
+    	 	android:maxLength="15"
+    	 	android:textSize="15sp"
+    	 	android:lines="1"
+    	 	android:singleLine="true"
+    	 	android:imeOptions="actionSend"
+        	android:visibility="invisible"
+    	 	/>
+	    
+		<Button
+			android:id="@+id/B_next"
+			android:layout_width="fill_parent"
+			android:layout_height="50dp"
+			android:layout_centerInParent="true"
+			android:layout_marginLeft="50dp"
+			android:layout_marginRight="50dp"
+			android:scaleType="fitXY"
+        	android:background="@drawable/b_click_white_blue"
+			android:text="시 작"
+        	android:textSize="15dp"
+        	android:visibility="invisible"
+			/>
+	</RelativeLayout>
+	
+	
+
+</RelativeLayout>

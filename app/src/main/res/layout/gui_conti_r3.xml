@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" 
+    android:background="@drawable/conti_selector">
+    
+    
+   	<ImageView
+        android:id="@+id/c_new"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/new_conti"
+        android:visibility="invisible"
+   		/>
+    
+    <TextView 
+        android:id="@+id/c_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+        android:layout_toLeftOf="@+id/CB_check"
+        android:maxLines="1"
+    	android:singleLine="true"
+    	android:textSize="20sp"
+    	android:textColor="@color/white"
+        android:text="아버지 사랑 ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄹ내asdfasdfasdfasdasdfasdffasdfasdfasd"
+        />
+    
+    <TextView 
+        android:id="@+id/c_mdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c_name"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+    	android:textSize="10sp"
+    	android:textColor="@color/lightgray"
+    	android:lines="1"
+    	android:singleLine="true"
+        android:text="작성일: 2012-04-17"
+        />
+    
+    <TextView 
+        android:id="@+id/c_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/c_mdate"
+        android:layout_marginLeft="20dip"
+        android:layout_alignBottom="@+id/c_mdate"
+        android:layout_toLeftOf="@+id/CB_check"
+    	android:textSize="10sp"
+    	android:textColor="@color/lightgray"
+    	android:lines="1"
+    	android:singleLine="true"
+        android:text="이기영전도사ㅁㅇㄴㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄻㄴㅇㄹ님"
+        />
+    
+    <TextView 
+        android:id="@+id/c_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/c_mdate"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+        android:layout_toLeftOf="@+id/CB_check"
+    	android:textSize="10sp"
+    	android:textColor="@color/lightgray"
+    	android:lines="1"
+    	android:singleLine="true"
+        android:text="청년예배adsfasdfasdfasdfasdfasdfasdfsssssssssssssssssssssssssssssssssssssssssssssssss"
+        />
+    
+    
+    
+    
+    
+    <CheckBox
+        android:id="@+id/CB_check"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

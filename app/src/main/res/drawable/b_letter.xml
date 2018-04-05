@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:variablePadding="false">
+    <item
+        android:state_focused="true" android:state_pressed="true"
+        android:drawable="@drawable/b_letter_blue"
+    />
+    <item
+        android:state_focused="false" android:state_pressed="true"
+        android:drawable="@drawable/b_letter_blue"
+    />
+    <item
+        android:state_focused="true" android:state_selected="false"
+        android:drawable="@drawable/b_letter_white"
+    />
+    <item
+        android:state_focused="false" android:state_selected="false"
+        android:drawable="@drawable/b_letter_white"
+    />
+</selector>

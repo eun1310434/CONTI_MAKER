@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background ="@android:color/black">
+    
+   	<ImageView 
+        android:id="@+id/IV_m_img"
+      	android:layout_width="fill_parent"
+      	android:layout_height="fill_parent"
+      	android:layout_alignParentLeft="true"
+      	android:layout_toLeftOf="@+id/center"
+      	android:background = "#00ffffff"
+      	android:scaleType="fitCenter">
+   	</ImageView>
+   	
+   	<RelativeLayout
+   	    android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+    </RelativeLayout>
+   		
+    <RelativeLayout
+        android:id="@+id/group"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@+id/center"
+        >
+    
+    	    
+    	<ListView
+       		android:id="@+id/LV_ms_img"
+       		android:layout_height="fill_parent"
+       		android:layout_width="fill_parent"
+    		android:layout_toRightOf="@+id/center"
+    		android:layout_toLeftOf="@+id/center_2"
+    		android:background="@android:color/transparent"
+    		android:cacheColorHint="@android:color/white"
+    		android:listSelector="@android:color/transparent"
+       		android:divider="@android:color/transparent"
+     		android:longClickable="true"
+     		/> 
+   	
+	   	<RelativeLayout
+	   	    android:id="@+id/center_2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerInParent="true"
+	        >
+	    </RelativeLayout>
+    	
+    
+   	
+	   	<RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+    		android:layout_toRightOf="@+id/center_2"
+    		android:background="@color/whitesmoke"
+	        >
+		    	<ListView
+		       		android:id="@+id/LV_m_name"
+		       		android:layout_height="fill_parent"
+		       		android:layout_width="fill_parent"
+		     	    android:layout_above="@+id/before"
+		    		android:background="@android:color/white"
+		       		android:divider="@android:color/darker_gray"
+		       		android:dividerHeight="0.1dp"
+		     		android:longClickable="true"
+		     		/> 
+	    	</RelativeLayout>
+		    
+    </RelativeLayout>
+    
+</RelativeLayout>

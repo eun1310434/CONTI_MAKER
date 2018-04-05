@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:background="@drawable/rl_bg_logo_white">
+    
+    
+        <RelativeLayout 
+        	android:id="@+id/bar"
+        	android:layout_width="fill_parent"
+        	android:layout_height="30dp"
+    		android:layout_alignParentTop="true"
+    		android:layout_centerHorizontal="true"
+    		android:background="@drawable/rl_top_bar"
+        	>
+        	
+	    <ImageView 
+    	    android:id="@+id/icon"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="10dp"
+        	android:layout_centerVertical="true"
+	        android:src="@drawable/iv_logo"
+	        android:scaleType="fitXY"
+	        />
+    
+	    
+	    <TextView 
+	    	android:id="@+id/TV_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/icon"
+        	android:layout_marginLeft="5dp"
+        	android:layout_centerVertical="true"
+	        android:text="CONTINUITY"
+	        android:textSize="12sp"
+	    	android:textColor="@color/white"
+	        />
+    		
+    		
+		<TextView 
+		    android:id="@+id/TV_my_s_id"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+        	android:layout_centerVertical="true"
+		    android:text="asdfasdfasdf"
+		    android:textSize="12sp"
+		    android:textColor="@color/white"
+		    />
+        
+        </RelativeLayout>
+    
+    	    
+    	<ListView
+       		android:id="@+id/conti_list"
+       		android:layout_height="fill_parent"
+       		android:layout_width="fill_parent"
+    		android:layout_marginRight="15dp"
+    		android:layout_marginLeft="15dp"
+    		android:layout_marginTop="5dp"
+       		android:layout_below="@+id/bar"
+       		android:layout_above="@+id/B_box"
+    		android:background="@android:color/transparent"
+    		android:cacheColorHint="@android:color/transparent"
+    		android:listSelector="@android:color/transparent"
+       		android:divider="@android:color/transparent"
+     		android:dividerHeight="5dp"
+     		android:longClickable="true"
+     		/> 
+    
+    <RelativeLayout 
+        android:id="@+id/B_box"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+    	android:layout_alignParentBottom="true"
+    	android:background="@drawable/rl_bottom_bar"
+        >
+    	
+        	
+	        <ImageButton
+    	        android:id="@+id/make_conti"
+    			android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_toLeftOf="@+id/arrage_conti"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/b_new"
+       			android:background="@android:color/transparent"
+    	 		/>
+        	
+	        <ImageButton
+    	        android:id="@+id/arrage_conti"
+    			android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_toLeftOf="@+id/delete_conti"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/b_array"
+       			android:background="@android:color/transparent"
+    	 		/>
+        	
+	        <ImageButton
+    	        android:id="@+id/delete_conti"
+    			android:layout_width="40dp"
+        		android:layout_height="40dp"
+        		android:layout_alignParentRight="true"
+        		android:layout_marginRight="15dp"
+        		android:layout_centerVertical="true"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/b_delete"
+       			android:background="@android:color/transparent"
+    	 		/>
+    
+        	
+        	
+	        <ImageView
+    	        android:id="@+id/partition_bar"
+    			android:layout_width="30dp"
+        		android:layout_height="50dp"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:layout_toLeftOf="@+id/make_conti"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/iv_partition_bar"
+       			android:background="@android:color/transparent"
+    	 		/>
+    
+        
+    </RelativeLayout>
+
+</RelativeLayout>

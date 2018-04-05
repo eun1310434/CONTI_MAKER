@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp" 
+    android:background="@drawable/setting_item_selector">
+    
+    <TextView 
+        android:id="@+id/TV_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dip"
+        android:layout_centerVertical="true"
+    	android:textSize="20sp"
+    	android:textColor="@android:color/black"
+    	android:text="버전정보"
+        />
+    
+    <TextView 
+        android:id="@+id/TV_submenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dip"
+        android:layout_centerVertical="true"
+    	android:textSize="17sp"
+    	android:textColor="@color/gray"
+    	android:text="1.1.1"
+        />
+    
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background = "@color/black">
+	    
+	   		<ImageView 
+	        	android:id="@+id/IV_m_img"
+	      		android:layout_width="fill_parent"
+	      		android:layout_height="fill_parent"
+	      		android:layout_centerHorizontal="true"
+	      		android:scaleType="matrix">
+	   		</ImageView>
+	   		
+     		<RelativeLayout 
+            	android:id="@+id/RL_title"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_alignParentTop="true"
+        		android:background="@drawable/cinfo_background" 
+                >
+        		
+               	<TextView 
+               	    android:id="@+id/TV_title"
+               	    android:layout_width="wrap_content"
+               	    android:layout_height="wrap_content"
+               	    android:layout_centerInParent="true"
+               	    android:text="악보의 제목이 들어갑니다."
+               	   	android:textSize="20dp"
+               	   	android:textColor="@color/white"
+               	    />
+        
+    		</RelativeLayout>
+   		
+     		<RelativeLayout 
+            	android:id="@+id/RL_items"
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:layout_alignParentBottom="true"
+        		android:background="@drawable/rl_bottom_bar" 
+                >
+                
+        		<ImageButton
+        			android:id="@+id/IB_screen"
+        			android:layout_width="40dp"
+        			android:layout_height="40dp"
+        			android:layout_toLeftOf="@+id/IB_share"
+        			android:layout_marginRight="10dp"
+                	android:layout_centerVertical="true"
+        			android:background="@android:color/transparent"
+        			android:scaleType="fitXY"
+        			android:src="@drawable/b_landscape" 
+        			/>
+                
+        		<ImageButton
+        			android:id="@+id/IB_share"
+        			android:layout_width="40dp"
+        			android:layout_height="40dp"
+        			android:layout_centerInParent="true"
+        			android:background="@android:color/transparent"
+        			android:scaleType="fitXY"
+        			android:src="@drawable/b_share" 
+        			/>
+        		<ImageButton
+        			android:id="@+id/IB_youtube"
+        			android:layout_width="30dp"
+        			android:layout_height="30dp"
+        			android:layout_toRightOf="@+id/IB_share"
+        			android:layout_marginLeft="10dp"
+                	android:layout_centerVertical="true"
+        			android:background="@android:color/transparent"
+        			android:scaleType="fitXY"
+        			android:src="@drawable/b_youtube" 
+        			/>
+    	</RelativeLayout>
+    	
+    	<ListView
+       		android:id="@+id/LV_ms_page"
+       		android:layout_height="wrap_content"
+       		android:layout_width="40dp"
+       		android:layout_alignParentRight="true"
+       		android:layout_centerVertical="true"
+    		android:background="@android:color/transparent"
+    		android:listSelector="@android:color/transparent"
+    		android:cacheColorHint="@color/white"
+       		android:divider="@android:color/transparent"
+       		android:dividerHeight="1dp"
+     		/>     	
+     		
+
+</RelativeLayout>

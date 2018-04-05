@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" 
+    android:background="@drawable/item_selector">
+    
+    
+    <TextView 
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_centerInParent="true"
+        />
+    
+    <ImageButton 
+        android:id="@+id/IB_profile"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dip"
+        android:src="@drawable/b_profile_gray"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        />
+    
+    <TextView 
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/IB_profile"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/center"
+        android:maxLines="1"
+    	android:singleLine="true"
+    	android:textSize="18sp"
+    	android:textColor="@color/black"
+        android:text="정은택asdfasdfasdfas"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        >
+        
+    
+    <TextView 
+        android:id="@+id/position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+    	android:singleLine="true"
+    	android:textSize="13sp"
+    	android:textColor="@color/dimgray"
+        android:text="ID: a123145"
+        />
+        
+    
+    <TextView 
+        android:id="@+id/etc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/position"
+        android:maxLines="2"
+    	android:textSize="10sp"
+    	android:textColor="@color/dimgray"
+        android:text="기타 설명이 들어가는 부분으로 그sfdgsdfgsdfgsdfgsdfg사sfdgsdfgsdfgsdfgsfgsdfg람의 정보및 여러가지를 적을수 있다."
+        />
+    
+    </RelativeLayout>
+    
+
+</RelativeLayout>

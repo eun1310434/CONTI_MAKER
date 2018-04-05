@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/whitesmoke">
+    
+    <RelativeLayout 
+        android:id="@+id/ED_box"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+    	android:layout_alignParentTop="true"
+    	android:layout_centerHorizontal="true"
+    	android:background="@drawable/rl_top_bar_big"
+        >
+    		
+    	<ImageView 
+    	    android:id="@+id/icon"
+        	android:layout_width="20dp"
+        	android:layout_height="20dp"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginLeft="10dp"
+        	android:layout_alignParentTop="true"
+        	android:layout_marginTop="6dp"
+        	android:src="@drawable/iv_logo"
+        	android:scaleType="fitXY"
+        	/>
+    
+	    
+	    <TextView 
+	    	android:id="@+id/TV_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/icon"
+        	android:layout_marginLeft="5dp"
+        	android:layout_alignParentTop="true"
+        	android:layout_marginTop="8dp"
+	        android:text="SCORE CHOICE"
+	        android:textSize="12sp"
+	    	android:textColor="@color/white"
+	        />
+    	
+        <EditText
+    	    android:id="@+id/find_music"
+    	 	android:layout_width="fill_parent"
+    	 	android:layout_height="wrap_content"
+    		android:layout_alignParentBottom="true"
+    		android:layout_centerHorizontal="true"
+    		android:layout_marginLeft="10dp"
+    		android:layout_marginRight="10dp"
+    	 	android:maxLength="20"
+    	 	android:textSize="20sp"
+    	 	android:lines="1"
+    	 	android:singleLine="true"
+    	 	android:imeOptions="actionSearch"
+    	 	/>
+    
+	    
+	    <TextView 
+	    	android:id="@+id/TV_my_s_id"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="10dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginTop="8dp"
+	        android:text="asdfasdfasdf"
+	        android:textSize="12sp"
+	    	android:textColor="@color/white"
+	        />
+        
+    </RelativeLayout>
+    
+        <ListView
+       		android:id="@+id/music_list"
+       		android:layout_height="fill_parent"
+       		android:layout_width="fill_parent"
+       		android:layout_marginRight="10dp"
+       		android:layout_marginLeft="10dp"
+       		android:layout_below="@+id/ED_box"
+       		android:layout_above="@+id/bar"
+       		android:layout_marginBottom="5dp"
+    		android:background="@android:color/transparent"
+    		android:cacheColorHint="#FFFAF0"
+    		android:listSelector="@android:color/transparent"
+       		android:divider="@android:color/transparent"
+     		/> 
+
+    	
+        <TextView
+        	android:id="@+id/bar"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_centerVertical="true"
+        	android:layout_alignParentLeft="true"
+        	android:layout_marginLeft="10dp"
+        	android:text="선택한 악보"
+	        android:textSize="15sp"
+    		android:textColor="#6B8E23"
+        />
+    
+    	<ListView
+       		android:id="@+id/my_music_list"
+       		android:layout_height="fill_parent"
+       		android:layout_width="fill_parent"
+    		android:layout_marginRight="10dp"
+    		android:layout_marginLeft="10dp"
+       		android:layout_below="@+id/bar"
+       		android:layout_above="@+id/B_box"
+	       	android:background="@android:color/transparent" 
+	       	android:divider="@color/lightgray"
+	     	android:dividerHeight="0.0001sp"
+	       	android:cacheColorHint="@color/whitesmoke"
+     		/>  
+    
+    <RelativeLayout 
+        android:id="@+id/B_box"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+    	android:layout_alignParentBottom="true"
+    	android:background="@drawable/rl_bottom_bar"
+        >
+        <RadioGroup 
+            android:id="@+id/select_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp" 
+            android:orientation="horizontal"
+			android:layout_gravity="fill" 
+			android:checkedButton="@+id/delete"
+            >
+            <RadioButton 
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="삭제"
+    			android:textColor="@color/white"
+                />
+            <RadioButton 
+                android:id="@+id/replace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="순서"
+    			android:textColor="@color/white"
+                />
+            
+        </RadioGroup>
+        
+        <ImageButton 
+        	android:id="@+id/up"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_toRightOf="@+id/select_type"
+        	android:layout_marginLeft="10dp"
+        	android:layout_centerHorizontal="true"
+        	android:scaleType="fitXY"
+       		android:layout_centerVertical="true"
+       		android:src="@drawable/off"
+       		android:background="@android:color/transparent"
+        	/>
+        
+        <ImageButton 
+        	android:id="@+id/down"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:layout_toRightOf="@+id/up"
+        	android:layout_marginLeft="5dp"
+        	android:layout_centerHorizontal="true"
+        	android:scaleType="fitXY"
+       		android:layout_centerVertical="true"
+       		android:src="@drawable/off"
+       		android:background="@android:color/transparent"
+        	/>
+       
+	        <ImageView
+    	        android:id="@+id/partition_bar"
+    			android:layout_width="30dp"
+        		android:layout_height="50dp"
+        		android:layout_marginRight="5dp"
+        		android:layout_centerVertical="true"
+        		android:layout_toLeftOf="@+id/IB_add"
+        		android:scaleType="fitXY"
+       			android:src="@drawable/iv_partition_bar"
+       			android:background="@android:color/transparent"
+    	 		/>
+	              
+		<ImageButton 
+    		android:id="@+id/IB_add"
+        	android:layout_width="40dp"
+        	android:layout_height="40dp"
+        	android:textSize="10sp"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="15dp"
+       		android:scaleType="fitXY"
+       		android:layout_centerVertical="true"
+       		android:src="@drawable/b_insert"
+       		android:background="@android:color/transparent"
+        	/>
+    	
+        
+    </RelativeLayout>
+        
+         
+
+</RelativeLayout>

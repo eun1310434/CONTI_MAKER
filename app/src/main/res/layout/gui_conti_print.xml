@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white"
+    >
+    
+    
+	<ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+       	android:layout_centerInParent="true"
+        android:src="@drawable/main_1"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+	    />	
+	    
+    
+	<ImageView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+       	android:layout_centerInParent="true"
+        android:src="@drawable/bg"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+	    />
+				
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="20dp" 
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="100dp" 
+    android:layout_marginBottom="100dp"
+    >
+		<TextView 
+    		android:id="@+id/contents_0"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerInParent="true"
+    		android:textSize="20sp"
+    		android:textColor="#4682B4"
+    		android:text="생성 중 입니다."
+    	/>
+    
+    
+		<TextView 
+    		android:id="@+id/contents_3"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@+id/contents_0"
+        	android:layout_marginTop="10dp"
+    		android:layout_centerHorizontal="true"
+    		android:textSize="10sp"
+    		android:textColor="@color/gray"
+    		android:text="절대 다른 작업을 피하여 주십시요."
+    		/>
+        
+		<TextView 
+    		android:id="@+id/contents_2"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@+id/contents_3"
+    		android:layout_centerHorizontal="true"
+    		android:textSize="10sp"
+    		android:textColor="@color/gray"
+    		android:text="20 ~ 30 초  소요 "
+    		/>
+		
+	</RelativeLayout>
+</RelativeLayout>
