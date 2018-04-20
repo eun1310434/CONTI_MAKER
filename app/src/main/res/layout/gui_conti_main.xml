@@ -112,7 +112,7 @@
     			android:layout_marginLeft="20dp"
     			android:layout_below="@+id/TV_c_writer_title"
     			android:textSize="20sp"
-        		android:text="신매인"
+        		android:text="Philip Jeong"
     			android:textColor="@color/dimgray"
     			android:gravity="left"
     			android:lines="1"
